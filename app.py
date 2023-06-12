@@ -13,7 +13,7 @@ df = pd.read_csv('data/superstore.csv')
 df['order_date'] = pd.to_datetime(df['order_date'])
 df['ship_date'] = pd.to_datetime(df['ship_date'])
 
-st.title('Superstore Dashboard')
+st.title('Superstore')
 
 df['order_year'] = df['order_date'].dt.year
 CURR_YEAR  = df['order_year'].max()
